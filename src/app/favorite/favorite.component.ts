@@ -1,20 +1,22 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output, ViewEncapsulation} from '@angular/core';
+
+export interface FavoriteChangedEventArgs {
+  newValue: boolean;
+}
 
 @Component({
   selector: 'app-favorite',
   template: `
     <i (click)="onClick()" class="fa-star" [ngClass]="isFavorite ? 'far' : 'fas'"></i>
   `,
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class FavoriteComponent {
   @Input("isFavorite")  isFavorite: boolean;
-  @Output() change = new EventEmitter();
-
-  constructor() {
-  }
+  @Output("click") click = new EventEmitter();
 
   onClick() {
     this.isFavorite = !this.isFavorite;
-    this.change.emit();
+    this.click.emit({ newValue: this.isFavorite });
   }
 }

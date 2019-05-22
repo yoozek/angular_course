@@ -2,4 +2,4 @@
 
 
 <app-movies></app-movies>
-<app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged()"></app-favorite>
+<app-favorite [isFavorite]="post.isFavorite" (click)="onFavoriteChanged($event)"></app-favorite>
