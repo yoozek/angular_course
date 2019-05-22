@@ -8,6 +8,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { MovieTitlePipe } from './movie-title.pipe';
 import { MoviesComponent } from './movies/movies.component';
 import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PanelComponent } from './panel/panel.component';
     FavoriteComponent,
     MovieTitlePipe,
     MoviesComponent,
-    PanelComponent
+    PanelComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

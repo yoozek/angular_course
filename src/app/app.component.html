@@ -8,4 +8,7 @@
     <p>some content</p>
   </div>
 </app-panel>
+
+<app-like [likesCount]="tweet.likesCount" [isLiked]="tweet.isLiked"></app-like>
+
 <app-favorite [isFavorite]="post.isFavorite" (click)="onFavoriteChanged($event)"></app-favorite>
