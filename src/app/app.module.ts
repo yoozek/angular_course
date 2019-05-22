@@ -2,13 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import {FormsModule} from "@angular/forms";
+import {SummaryPipe} from "./summary.pipe";
+import { FavoriteComponent } from './favorite/favorite.component';
+import { MovieTitlePipe } from './movie-title.pipe';
+import { MoviesComponent } from './movies/movies.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SummaryPipe,
+    FavoriteComponent,
+    MovieTitlePipe,
+    MoviesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
