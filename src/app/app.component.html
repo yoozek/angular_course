@@ -1,5 +1,11 @@
 <h2>Hello</h2>
 
 
-<app-movies></app-movies>
+<app-panel>
+  <div class="heading">Heading</div>
+  <div class="body">
+    <h2>Body</h2>
+    <p>some content</p>
+  </div>
+</app-panel>
 <app-favorite [isFavorite]="post.isFavorite" (click)="onFavoriteChanged($event)"></app-favorite>

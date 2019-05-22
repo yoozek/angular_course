@@ -8,8 +8,7 @@ export interface FavoriteChangedEventArgs {
   selector: 'app-favorite',
   template: `
     <i (click)="onClick()" class="fa-star" [ngClass]="isFavorite ? 'far' : 'fas'"></i>
-  `,
-  encapsulation: ViewEncapsulation.ShadowDom
+  `
 })
 export class FavoriteComponent {
   @Input("isFavorite")  isFavorite: boolean;

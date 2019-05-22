@@ -7,6 +7,7 @@ import {SummaryPipe} from "./summary.pipe";
 import { FavoriteComponent } from './favorite/favorite.component';
 import { MovieTitlePipe } from './movie-title.pipe';
 import { MoviesComponent } from './movies/movies.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MoviesComponent } from './movies/movies.component';
     SummaryPipe,
     FavoriteComponent,
     MovieTitlePipe,
-    MoviesComponent
+    MoviesComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
